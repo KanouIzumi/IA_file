@@ -5,8 +5,9 @@ using UnityEngine;
 public class Pan_Zoom_Script : MonoBehaviour
 {
     Vector3 touchStart;
-    public float zoomOutMin = 1;
-    public float zoomOutMax = 8;
+    public float zoomOutMin;
+    public float zoomOutMax;
+    public float m_FieldOfView;
 
     // Update is called once per frame
     void Update()
@@ -28,7 +29,7 @@ public class Pan_Zoom_Script : MonoBehaviour
 
             float difference = currentMagnitude - prevMagnitude;
 
-            zoom(difference * 0.01f);
+            zoom(difference * 20f);
         }
         else if (Input.GetMouseButton(0))
         {
@@ -40,6 +41,6 @@ public class Pan_Zoom_Script : MonoBehaviour
 
     void zoom(float increment)
     {
-        Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, zoomOutMin, zoomOutMax);
+        Camera.main.fieldOfView = Mathf.Clamp(Camera.main.fieldOfView - increment, zoomOutMin, zoomOutMax);
     }
 }

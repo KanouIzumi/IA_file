@@ -614,11 +614,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2022675376}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90bd30e0d7226574dadd38492e43d35e, type: 3}
+  m_Script: {fileID: 11500000, guid: 04728ca1d09ffee4097e3a723b1a7dd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomOutMin: 1
-  zoomOutMax: 8
+  isDragging: 0
+  cam: {fileID: 2022675378}
 --- !u!114 &2022675381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,11 +628,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2022675376}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04728ca1d09ffee4097e3a723b1a7dd5, type: 3}
+  m_Script: {fileID: 11500000, guid: 90bd30e0d7226574dadd38492e43d35e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDragging: 0
-  cam: {fileID: 2022675378}
+  zoomOutMin: 50
+  zoomOutMax: 100
+  m_FieldOfView: 60
 --- !u!1 &2033931427
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,7 +722,7 @@ Transform:
   m_GameObject: {fileID: 2033931427}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_LocalScale: {x: 78, y: 78, z: 78}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
