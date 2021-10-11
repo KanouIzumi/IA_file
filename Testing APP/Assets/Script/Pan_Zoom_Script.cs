@@ -43,4 +43,5 @@ public class Pan_Zoom_Script : MonoBehaviour
     {
         Camera.main.fieldOfView = Mathf.Clamp(Camera.main.fieldOfView - increment, zoomOutMin, zoomOutMax);
     }
+
 }

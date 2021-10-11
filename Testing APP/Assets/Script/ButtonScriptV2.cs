@@ -17,9 +17,19 @@ public class ButtonScriptV2 : MonoBehaviour
         
     }
 
-    public void GoToCorridor()
+    public void GoTo360View()
     {
         SceneManager.LoadScene("View360PIC");
+    }
+
+    public void GoToCorridor()
+    {
+        SceneManager.LoadScene("Hallway");
+    }
+
+    public void GoTo360Video()
+    {
+        SceneManager.LoadScene("View360Video");
     }
 
     public void Back()
