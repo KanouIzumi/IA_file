@@ -1018,6 +1018,8 @@ MonoBehaviour:
   zoomOutMin: 50
   zoomOutMax: 100
   m_FieldOfView: 0
+  VideoUI: {fileID: 288451485}
+  PhotoUI: {fileID: 154459859}
 --- !u!1 &2033931427
 GameObject:
   m_ObjectHideFlags: 0
